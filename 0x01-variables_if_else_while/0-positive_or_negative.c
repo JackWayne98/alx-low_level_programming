@@ -1,9 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/* 
+ * main -Entry point
+ *
+ *Description: This program assigns a rand number to the variable n
+ *
+ *Returns: random number
+ */
 int main(void)
 {
 	int n;
@@ -23,6 +27,5 @@ int main(void)
 	  {
 	  printf("%d is negative\n", n);
 	  }
-	
 	return (0);
 }
