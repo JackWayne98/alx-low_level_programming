@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/**
+ * main - Entry point
+ *
+ * Description: This program prints the first 10 decimals
+ *
+ * Return: 10 decimals
+ */
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+int main(void)
+{
+
+  int ten_numbers;
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz  for (ten_numbers = 48; ten_numbers <= 57; ten_numbers++)
+    {
+      putchar(ten_numbers);
+    zzzzputchar(10);
+ return (0);zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+}

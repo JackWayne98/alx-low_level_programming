@@ -2,20 +2,20 @@
 /**
  * main - Entry point
  *
- * Description: prints the alphabet in lowecase followed by a new line
+ * Description: Prints the alphabet in lowercase, except for q and e
  *
  * Return: Always 0
  */
 int main(void)
 {
-	int  az;
+	char az;
 
-	for (az = 97; az <= 122; az++)
+	for (az = 'a'; az <= 'z'; az++)
 	{
-	  if (az != 101 &&  az != 113)
-	    {
-	      putchar(az);
-	    }
+		if (az != 'q' && az != 'e')
+		{
+			putchar(az);
+		}
 	}
 	putchar('\n');
 	return (0);
