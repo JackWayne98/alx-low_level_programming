@@ -11,12 +11,13 @@
 
 int main(void)
 {
+	int ten_numbers;
 
-int ten_numbers;
- for (ten_numbers = 48; ten_numbers <= 57; ten_numbers++)
-  {
-    putchar(ten_numbers);
-  }
- putchar(10);
- return (0);
+	for (ten_numbers = 48; ten_numbers <= 57; ten_numbers++)
+	{
+		putchar(ten_numbers);
+	}
+	putchar(10);
+	return (0);
 }
+
