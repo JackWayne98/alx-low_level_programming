@@ -16,11 +16,14 @@ int main(void)
 		{
 			for (third_row = 50; third_row <= 57; third_row++)
 			{
-				if  (first_row != second_row != third_row && ((second_row > first_row) && (third_row > second_row))
+				if  (first_row != second_row != third_row)
 				{
+					if ((second_row > first_row) && (third_row > second_row))
+					{
 					putchar(first_row);
 					putchar(second_row);
 					putchar(third_row);
+					}
 					if (first_row == 55 && second_row == 56 && third_row == 57)
 					{
 						break;
