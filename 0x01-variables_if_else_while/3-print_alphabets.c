@@ -14,7 +14,7 @@ char lower, upper;
 	{
 		putchar(lower);
 	}
-	for (upper = 65; uper <= 97; upper++)
+	for (upper = 65; upper <= 97; upper++)
 	{
 	  putchar(upper);
 	}
