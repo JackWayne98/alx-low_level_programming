@@ -12,7 +12,7 @@ int main(void)
 
 	for (az = 97; az <= 122; az++)
 	{
-	  if (az != 101 || az != 113)
+	  if (az != 101 &&  az != 113)
 	    {
 	      putchar(az);
 	    }
