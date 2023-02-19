@@ -9,7 +9,7 @@
  * Return: 10 decimals
  */
 
-main()
+int main()
 {
 
 int ten_numbers;
