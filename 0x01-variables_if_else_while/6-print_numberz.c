@@ -9,14 +9,14 @@
  * Return: 10 decimals
  */
 
-int main()
+int main(void)
 {
 
 int ten_numbers;
-for (ten_numbers = 48; ten_numbers <= 57; ten_numbers++)
-  {
-    putchar(ten_numbers);
-  }
- putchar("\n");
+ for (ten_numbers = 48; ten_numbers <= 57; ten_numbers++)
+   {
+     putchar(ten_numbers);
+   }
+ putchar(10);
  return (0);
 }
