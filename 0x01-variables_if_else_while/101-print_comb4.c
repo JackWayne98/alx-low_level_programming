@@ -23,13 +23,14 @@ int main(void)
 					putchar(first_row);
 					putchar(second_row);
 					putchar(third_row);
-					}
+
 					if (first_row == 55 && second_row == 56 && third_row == 57)
 					{
 						break;
 					}
 					putchar(',');
 					putchar(' ');
+					}
 				}
 			}
 		}
