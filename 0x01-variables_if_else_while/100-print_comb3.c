@@ -14,13 +14,18 @@ int main(void)
 	{
 		for (second_row = 49; second_row <= 57; second_row++)
 		{
-			if  (first_row != second_row && (second_row > first_row))
+			if ((first_row == 56) && (second_row == 57))
 			{
 				putchar(first_row);
 				putchar(second_row);
 			}
-			putchar(',');
-			putchar(' ');
+			else if  (first_row != second_row && (second_row > first_row))
+			{
+				putchar(first_row);
+				putchar(second_row);
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
