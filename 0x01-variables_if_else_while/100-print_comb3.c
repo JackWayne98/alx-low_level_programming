@@ -18,9 +18,9 @@ int main(void)
 			{
 				putchar(first_row);
 				putchar(second_row);
-				putchar(',');
-				putchar(' ');
 			}
+			putchar(',')
+			putchar(' ')
 		}
 	}
 	putchar('\n');
