@@ -16,7 +16,7 @@ int main(void)
 		{
 			for (third_row = 50; third_row <= 57; third_row++)
 			{
-				if  (first_row != second_row != third_row)
+				if  ((first_row != second_row) != third_row)
 				{
 					if ((second_row > first_row) && (third_row > second_row))
 					{
