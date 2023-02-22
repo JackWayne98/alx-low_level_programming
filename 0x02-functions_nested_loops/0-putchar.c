@@ -10,7 +10,8 @@
  */
 int main(void)
 {
-	write(1, "_putchar", "%c", "putchar");
-	putchar('\n');
+	write(1, "_putchar", strlen("_putchar"));
+	putchar(10);
+
 	return (0);
 }
