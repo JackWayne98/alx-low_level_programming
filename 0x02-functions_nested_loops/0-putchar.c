@@ -1,6 +1,6 @@
 #include "main.h"
 #include <unistd.h>
-#include <string.g>
+#include <string.h>
 /**
  * main - Entry point
  *
