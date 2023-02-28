@@ -2,7 +2,7 @@
 /**
  * _strlen - sends back the lenght of a string
  * @s: is a pointer to the original string
- * Description: Function to reurn the lenght of a string
+ *i Description: Function to reurn the lenght of a string
  * Return: always 0
  */
 int _strlen(char *s)
