@@ -1,12 +1,20 @@
 #include "main.h"
 /**
- * reset_to_98 - takes a pointer to an int as a parameter
- * and updated the value it points to 98
- * Description: changes the value by reference of a variable
- * @n: pointer to an int
+ * _puts_recursion - uses the puts method to print out a string
+ * by calling the fuction by itself
+ * Description: prints out a string of characters using recursion
+ * @s: takes a string of characters and printes them using puts
  * Return: always 0
  */
 void _puts_recursion(char *s)
 {
-	_puts_recursion(puts(s));	
+	if (*s)
+	{
+		_putchar(s);
+		_puts_recursion(s + 1);
+	}
+	else
+	{
+		_putchar(10);
+	}
 }
