@@ -10,7 +10,7 @@
  */
 int _isalpha(int c)
 {
-	if (c == 'c' && c == 'C')
+	if (c >= 65)
 	{
 		return (1);
 	}
