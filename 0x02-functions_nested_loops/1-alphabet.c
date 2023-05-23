@@ -1,12 +1,12 @@
 #include "main.h"
-#include <unistd.h>
+#include <uinistd.h>
 #include <string.h>
 /**
- * function - Entry point
+ * print_alphabet - prints the alhpabet in lowercase, followed by a new line.
  *
- * Description: Prints the alphabet in lowercase, followed by a new line.
+ * Description: prints the alphabet in lowercase, followed by a new line.
  *
- * Return: the alphabet
+ * Return: none
  */
 void print_alphabet(void)
 {
