@@ -14,14 +14,14 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		return (putchar('49'), putchar('+'));
+		return (putchar(49), putchar('+'));
 	}
 	else if (n == 0)
 	{
-		return (putchar('48'), putchar('0'));
+		return (putchar(48), putchar('0'));
 	}
 	else
 	{
-		return (putchar('49'), putchar('-'));
+		return (putchar(49), putchar('-'));
 	}
 }
