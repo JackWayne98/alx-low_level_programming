@@ -2,11 +2,11 @@
 #include <unistd.h>
 #include <string.h>
 /**
- * _absint - evaluates the alhabetic character
+ * _abs - evaluates the alhabetic character
  *
- * Description: evaluates a character if it's c then return 1, otherwise 0
- * @c: receives a lower or uppercase character
- * Return: 1 if c is lowercase/upper, otherwise 0
+ * Description: functions processes the absolute value of an integer
+ * @n: receives an integer
+ * Return: the absolute value of n
  */
 int _abs(int n)
 {
