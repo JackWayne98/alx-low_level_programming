@@ -2,13 +2,13 @@
 #include <unistd.h>
 #include <string.h>
 /**
- * print_alphabet_10x - prints the alphabet in lowercase 10x
+ * print_alphabet_x10 - prints the alphabet in lowercase 10x
  *
  * Description: prints the alphabet in lowercase, followed by a new line.
  *
  * Return: none
  */
-void print_alphabet_10x(void)
+void print_alphabet_x10(void)
 {
 	int j;
 	char i;
