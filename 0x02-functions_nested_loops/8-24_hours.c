@@ -5,20 +5,20 @@
  * jack_bauer - prints every minute of a day
  *
  * Description: function that prints every minute from 00:00 to 23:59
- * 
+ *
  * Return: NA
  */
 void jack_bauer(void)
 {
 	int i, j, h, k;
-	
-	for(k = 0; k <= 2; k++)
+
+	for (k = 0; k <= 2; k++)
 	{
-		for(h = 0; h <= 3; h++)
+		for (h = 0; h <= 9; h++)
 		{
-			for(j = 0; j <= 5; j++)
+			for (j = 0; j <= 5; j++)
 			{
-				for(i = 0; i <= 9; i++)
+				for (i = 0; i <= 9; i++)
 				{
 					putchar('0' + k);
 					putchar('0' + h);
@@ -27,6 +27,10 @@ void jack_bauer(void)
 					putchar('0' + i);
 					putchar('\n');
 				}
+			}
+			if (k == 2 && h == 4 && j == 5 && i == 9)
+			{
+				break;
 			}
 		}
 	}
