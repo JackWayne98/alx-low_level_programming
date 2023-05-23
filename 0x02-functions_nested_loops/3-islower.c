@@ -6,11 +6,11 @@
  *
  * Description: evaluates a character if it's c then return 1, otherwise 0
  * @c: receives a character
- * Return: 1 if c is lowercase, otherwise 0
+ * Return: 1 if c is lowercase, iotherwise 0
  */
 int _islower(int c)
 {
-	if (c == 'c')
+	if (c >= 'a')
 	{
 		return (1);
 	}
