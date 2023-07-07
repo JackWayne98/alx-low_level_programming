@@ -6,15 +6,11 @@
  * @s: takes a string of characters
  * Return: always 0
  */
-void _puts_recursion(char *s)
+void _print_rev_recursion(char *s)
 {
-	if (*s != '\0')
+	if (*s)
 	{
-		_putchar(*s);
-		_puts_recursion(s + 1);
-	}
-	else
-	{
-		_putchar(10);
+		_print_rev_recursion(s + 1);
+		putchar(*s);
 	}
 }
