@@ -19,7 +19,7 @@ int main(int argc, char *argv[] __attribute__((unused)))
 	}
 	else
 	{
-		printf("\n");
+		printf("0\n");
 	}
 	return (0);
 }
