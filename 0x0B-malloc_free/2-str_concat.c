@@ -40,6 +40,8 @@ char *str_concat(char *s1, char *s2)
 		*(ptr + size1) = *(s2 + i);
 		size1++;
 	}
+	
+	*(ptr + total) = '\0';
 
 	return (ptr);
 }
