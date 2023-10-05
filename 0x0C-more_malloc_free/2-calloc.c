@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 /**
  * calloc - allocates memory for an array using malloc
  *@nmemb: unsigned int
