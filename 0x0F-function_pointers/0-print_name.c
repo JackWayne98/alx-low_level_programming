@@ -4,7 +4,7 @@
  * @name: pointer to a char as an argument
  * @f: pointer to a function as an argument
  **/
-void print_name(char *name, void (*f)(char *));
+void print_name(char *name, void (*f)(char *))
 {
-	return ((f *)(name));
+	f(name);
 }
