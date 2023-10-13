@@ -1,5 +1,4 @@
 #include "variadic_functions.h"
-
 /**
  * print_numbers - prints arguments separated by commas
  * @separator: string that represents a comma
@@ -8,7 +7,7 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
-	
+
 	va_list args;
 
 	va_start(args, n);
@@ -29,4 +28,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		}
 	}
 	va_end(args);
+	printf("\n");
 }
