@@ -1,20 +1,29 @@
 ;Hello, Holberton program followed by a new line
 
-global main
+section .data
+    message db "Hello, Holberton!\n",0
 
-section .text:
+section .text
+    global main
+
 main:
-	mov eax, 0x4
-	mov ebx, 1
-	mov ecx, message
-	mov edx, message_length
-	int 0x80
+    ; Syscall number for write (1)
+    mov rax, 1
 
-	mov eax, 0x01
-	mov ebx, 0
-	int 0x80
+    ; File descriptor for stdout (1)
+    mov rdi, 1
 
-section .data:
-	message: db "Hello, Holberton!", 0xA
-	message_length equ $-message
+    ; Address of the message
+    lea rsi, [rel message]
+
+    ; Length of the message
+    mov rdx, 15
+
+    ; Make the syscall (write)
+    syscall
+
+    ; Exit the program
+    mov rax, 60         ; Syscall number for exit (60)
+    xor rdi, rdi        ; Status code 0
+    syscall
 
