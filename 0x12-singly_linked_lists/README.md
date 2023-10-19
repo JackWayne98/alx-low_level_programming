@@ -7,3 +7,5 @@ File 2-add_node.c is a function that adds a new node at the beginning from a lin
 File 3-add_node_end.c is a function that adds a new node at the end from a linked list.
 
 File 4-free_list.c is a function that frees a linked list.
+
+File list.h is a file containing all the prototypes and the struct
