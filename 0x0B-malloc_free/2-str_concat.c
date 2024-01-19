@@ -13,7 +13,7 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i;
 	size_t size1 = (s1 != NULL) ? strlen(s1) : 0;
 	size_t size2 = (s2 != NULL) ? strlen(s2) : 0;
-	size_t total = strlen(s1) + strlen(s2);
+	size_t total = size1 + size2;
 	char *ptr;
 
 	ptr = malloc(sizeof(char) * total + 1);
@@ -22,13 +22,27 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < size1; i++)
+	if (s1 == NULL)
 	{
-		*(ptr + i) = *(s1 + i);
+		ptr[0] = '\0';
 	}
-	for (i = 0; i < size2; i++)
+	else
 	{
-		*(ptr + size1 + i) = *(s2 + i);
+		for (i = 0; i < size1; i++)
+		{
+			*(ptr + i) = *(s1 + i);
+		}
+	}
+	if (s2 == NULL)
+	{
+		ptr[size1] = '\0';
+	}
+	else
+	{
+		for (i = 0; i < size2; i++)
+		{
+			*(ptr + size1 + i) = *(s2 + i);
+		}
 	}
 
 	*(ptr + total) = '\0';
