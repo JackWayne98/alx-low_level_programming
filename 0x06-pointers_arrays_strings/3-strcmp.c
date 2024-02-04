@@ -19,11 +19,11 @@ int _strcmp(char *s1, char *s2)
 		{
 			k++;
 		}
-		else if (s1[len] < s2[len2])
+		else if (s1[k] != s2[k]  && (s1[len] < s2[len2]))
 		{
 			return (-15);
 		}
-		else if (s2[len2] < s1[len])
+		else if (s2[k] != s1[k] &&  (s2[len2] < s1[len]))
 		{
 			return (15);
 		}
